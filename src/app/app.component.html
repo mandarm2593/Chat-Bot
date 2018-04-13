@@ -1,0 +1,22 @@
+
+
+
+<div class="messages">
+<div *ngFor="let message of messages">
+<div class="talk-bubble tri-right round" [ngClass]="{ 'left-top': message.from === 'bot',
+                                                'btm-left':   message.from === 'user' }">
+  <div class="talktext">
+    <p>{{message.content}}</p>
+    <p style="color:red; float:right;">{{message.from}}</p>
+  </div>
+
+</div>
+
+</div>
+</div>
+
+<input type="text" [(ngModel)]="inputText" (keyup.enter)="acceptInput()">
+<button (click)="acceptInput()">Submit</button>
+
+
+
