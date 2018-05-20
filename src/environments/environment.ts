@@ -7,6 +7,6 @@ export const environment = {
   production: false,
 
   dialogflow: {
-    angularBot: 'fb2a7d3b872c4d4791459dfdec9f877e'
+    angularBot: 'YOUR_KEY'
   }
 };
